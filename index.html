@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica Factorial</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,18 +11,22 @@
 
     <div class="contenedor">
 
-        
-        <img src="img/cuaderno.png" alt="Cuaderno" class="cuaderno">
+        <img src="IMG/cuaderno.png" class="cuaderno" alt="cuaderno">
 
-        <!-- CALCULADORA -->
-        <img src="img/calculadora.png" alt="Calculadora" class="calculadora">
+        <img src="IMG/numeros.png" class="numeros" alt="numeros decorativos">
 
-        <!-- PERSONAJE -->
-        <img src="img/personaje.png" alt="Personaje" class="personaje">
+        <img src="IMG/logogeneration.png" class="logo" alt="logo Generation Colombia">
 
-        <!-- CONTENIDO DEL CUADERNO -->
+        <img src="IMG/calculadora.png" class="calculadora" alt="calculadora">
 
-        <div class="contenido">
+        <img src="IMG/personaje.png" class="personaje" alt="personaje">
+
+        <img src="IMG/cuadroresultado.png" class="cuadroresultado" alt="resultado">
+
+        <img src="IMG/cuadroingreso valor.png" class="cuadroingreso" alt="ingreso">
+
+
+        <div class="contenido-cuaderno">
 
             <h1>PRÁCTICA FACTORIAL</h1>
 
@@ -33,18 +35,17 @@
                 <h3>INSTRUCCIONES:</h3>
 
                 <p>✅ Ingrese un número entero.</p>
-
-                <p>✅ Presione el botón Calcular.</p>
-
-                <p>✅ Observe el resultado.</p>
+                <p>✅ Presione el botón calcular.</p>
+                <p>✅ Mira el resultado.</p>
 
             </div>
 
-            <div class="entrada">
+            <div class="zona-ingreso">
 
-                <label>INGRESE UN NÚMERO:</label>
+                <label>Ingrese un número:</label>
 
-                <input type="number" id="numero">
+                <input type="number" id="numero" placeholder="Escribe Aquí">
+    
 
                 <button onclick="calcularFactorial()">
                     CALCULAR
@@ -54,14 +55,9 @@
 
         </div>
 
-        <!-- RESULTADO -->
 
-        <div class="resultado">
-
-            <div id="resultado">
-                Mira aquí el resultado...
-            </div>
-
+        <div id="resultado">
+            Mira aquí el resultado...
         </div>
 
     </div>

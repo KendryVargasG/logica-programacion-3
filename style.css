@@ -1,4 +1,4 @@
-/* RESET */
+.root
 
 *{
     margin: 0;
@@ -6,141 +6,321 @@
     box-sizing: border-box;
 }
 
-/* FONDO */
-
 body{
-    min-height: 100vh;
 
+    margin: 0;
+    min-height: 100vh;
     background-image: url("./img/fondo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    font-family: Arial, sans-serif;
 }
 
-/* CONTENEDOR GENERAL */
-
 .contenedor{
+
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
-/* ZONA DEL CUADERNO */
-
 .cuaderno{
+    
     position: absolute;
-    top: 180px;
-    left: 120px;
-    width: 350px;
+    left: 15px;
+    top: 15px;
+    width: 1000px;
+    height: auto;
+}
+  
+  .numeros{
+
+    position: absolute;
+    left: 660px;
+    margin-top: 180px;
+    width: 120px;
+    z-index: 10;
+
 }
 
-/* TITULO */
+.logo{
+
+    position: absolute;
+    left: 80px;
+    bottom: 55px;
+    width: 140px;
+}
+
+.calculadora{
+   
+    position:absolute;
+    left:680px;
+    margin-top:570px;
+    width:120px;
+}
+
+.personaje{
+    position: absolute;
+    right: 590px;
+    margin-top: 130px;
+    width: 220px;
+}
+
+.cuadroresultado{
+
+    position: absolute;
+    right: 500px;
+    margin-top: 380px;
+    width: 360px;
+}
+
+#resultado h2{
+
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 42px;
+    color: #f59ab4;
+}
+
+#resultado p{
+
+    margin:0;
+    line-height:1.4;
+}
+.cuadroingreso{
+
+    position:absolute;
+    left:370px;
+    margin-top:580px;
+    width:200px;
+}
+
+.cuadroingreso{
+
+    pointer-events: none;
+    z-index:1;
+}
+
+.contenido-cuaderno{
+
+    position: absolute;
+    left: 395px;
+    top: 75px;
+    width: 290px;
+}
 
 h1{
-    font-size: 42px;
-    color: #111;
-    margin-bottom: 40px;
+   
+    position:absolute;
+    margin-top:150px;
+    left:-65px;
+    width:320px;
+    font-size:38px;
+    line-height:1;
+    text-align:center;
+    color:#000;
+    font-weight:900;
 }
 
-/* INSTRUCCIONES */
+.instrucciones{
 
-.instrucciones h2{
-    font-size: 25px;
-    margin-bottom: 15px;
+   position:absolute;
+   margin-top:280px;
+   left:-20px;
+   width:250px;
+
+}
+
+.instrucciones h3{
+
+    font-size:18px;
+    margin-bottom:20px;
 }
 
 .instrucciones p{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
 
-/* INPUT */
-
-.entrada{
-    margin-top: 130px;
+    font-size:16px;
+    margin-bottom:12px;
 }
 
 label{
-    display: block;
 
-    font-size: 28px;
-    font-weight: bold;
-
-    margin-bottom: 20px;
+    position:absolute;
+    left:-30px;
+    top:450px;
+    font-size:18px;
+    font-weight:bold;
 }
 
 input{
-    width: 160px;
 
-    padding: 12px;
-
-    border: 2px solid #9bb6c0;
-    border-radius: 15px;
-
-    background-color: #d6e9f2;
-
-    text-align: center;
-
-    font-size: 18px;
+    position:absolute;
+    left:20px;
+    top:535px;
+    width:120px;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    color:#333;
+    cursor:text;
+    z-index:999;
 }
 
-/* BOTON */
+input::placeholder{
 
-button{
+    color:#6b8a96;
+    font-size:16px;
+}
 
-    margin-top: 20px;
+input:focus{
 
-    display: block;
+    background:rgba(255,255,255,.15);
+    border-radius:15px;
+}
 
-    padding: 12px 25px;
+    button{
 
-    border: none;
-
-    border-radius: 15px;
-
-    background: #f5a3b6;
-
-    color: white;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
+    position:absolute;
+    left:40px;
+    top:600px;
+    padding:12px 30px;
+    border:none;
+    border-radius:15px;
+    background:#f59ab4;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 button:hover{
-    background: #ec89a0;
-}
 
-/* RESULTADO */
-
-.resultado-container{
-
-    position: absolute;
-
-    top: 410px;
-
-    right: 120px;
-
-    width: 270px;
-
-    text-align: center;
-}
-
-.resultado-container h2{
-    display: none;
+    background: #f481a3;
 }
 
 #resultado{
 
-    font-size: 24px;
-
-    font-weight: bold;
-
+    position: absolute;
+    right: 540px;
+    margin-top: 385px;
+    font-size: 28px;
+    width: 240px;
+    height: 320px;
+    text-align: center;
     color: #333;
-
     padding: 20px;
+}
+
+/* Responsive Tablet */
+
+
+@media (max-width: 1024px){
+
+    .cuaderno{
+        width: 750px;
+    }
+
+    .personaje{
+        right: 250px;
+        width: 180px;
+    }
+
+    .cuadroresultado{
+        right: 180px;
+        width: 280px;
+    }
+
+    #resultado{
+        right: 230px;
+    }
+
+}
+
+/* Responsive Celular */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .contenedor{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        padding:20px;
+
+        min-height:auto;
+    }
+
+    .cuaderno{
+
+        position:relative;
+
+        width:95%;
+
+        left:0;
+        top:0;
+    }
+
+    .contenido-cuaderno{
+
+        position:absolute;
+
+        left:20%;
+        top:60px;
+    }
+
+    .personaje{
+
+        position:relative;
+
+        right:auto;
+
+        margin-top:20px;
+
+        width:150px;
+    }
+
+    .cuadroresultado{
+
+        position:relative;
+
+        right:auto;
+
+        margin-top:20px;
+
+        width:280px;
+    }
+
+    #resultado{
+
+        position:absolute;
+
+        right:auto;
+
+        margin-top:510px;
+
+        width:200px;
+
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .numeros{
+        width:80px;
+    }
+
+    .logo{
+        width:100px;
+    }
+
+    .calculadora{
+        width:90px;
+    }
+
 }

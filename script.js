@@ -7,7 +7,7 @@ function calcularFactorial() {
     if (isNaN(numero)) {
 
         resultado.innerHTML =
-            "❌ Debe ingresar un número válido.";
+            "Error: Debe ingresar un número válido.";
 
         return;
     }
@@ -15,7 +15,7 @@ function calcularFactorial() {
     if (numero < 0) {
 
         resultado.innerHTML =
-            "❌ El factorial no existe para números negativos.";
+            "Error: El factorial no existe para números negativos.";
 
         return;
     }
@@ -34,8 +34,20 @@ function calcularFactorial() {
         }
     }
 
-    resultado.innerHTML = `
-        <h3>${numero}! = ${factorial}</h3>
-        <p>${operacion}</p>
-    `;
+ resultado.innerHTML = `
+
+        <p class="texto1">
+            El Número Factorial de:
+        </p>
+
+        <h3>${numero}</h3>
+
+        <p class="texto2">
+            es igual a:
+        </p>
+
+        <h2>🎉${factorial}🎉</h2>
+
+    </div>
+`;
 }
