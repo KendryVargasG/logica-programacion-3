@@ -1,0 +1,146 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO */
+
+body{
+    min-height: 100vh;
+
+    background-image: url("./img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR GENERAL */
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* ZONA DEL CUADERNO */
+
+.cuaderno{
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    width: 350px;
+}
+
+/* TITULO */
+
+h1{
+    font-size: 42px;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+/* INSTRUCCIONES */
+
+.instrucciones h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.instrucciones p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* INPUT */
+
+.entrada{
+    margin-top: 130px;
+}
+
+label{
+    display: block;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+input{
+    width: 160px;
+
+    padding: 12px;
+
+    border: 2px solid #9bb6c0;
+    border-radius: 15px;
+
+    background-color: #d6e9f2;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+/* BOTON */
+
+button{
+
+    margin-top: 20px;
+
+    display: block;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #f5a3b6;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #ec89a0;
+}
+
+/* RESULTADO */
+
+.resultado-container{
+
+    position: absolute;
+
+    top: 410px;
+
+    right: 120px;
+
+    width: 270px;
+
+    text-align: center;
+}
+
+.resultado-container h2{
+    display: none;
+}
+
+#resultado{
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    padding: 20px;
+}
